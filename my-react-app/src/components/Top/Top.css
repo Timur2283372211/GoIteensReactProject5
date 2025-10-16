@@ -1,0 +1,148 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #303030;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    padding-top: 100px;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+header{
+    background-color: #454545;
+    padding: 40px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border-bottom: 2px solid #3c3c3c;
+}
+header h1{
+    color: #ffffff;
+    margin: 0;
+    font-size: 36px;
+}
+
+header h1 span{
+    color: #ffd000;
+    margin: 0;
+    font-size: 36px;
+}
+
+main{
+    margin-bottom: 40px;
+    padding: 40px;
+    background-color: #aeaeae;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.main-section{
+    padding: 40px;
+    background: #424242;
+    color: #afafaf;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.buttons{
+    display: inline;
+    gap: 20px;
+}
+
+.buttons button{
+    background: #c6c6c6;
+    margin: 5px;
+    color: #424242;
+    border-radius: 30px;
+    padding: 10px 20px;
+    list-style: none;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.buttons button:hover{
+    background: #ffd000;
+    color: #424242;
+}
+
+footer{
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    border-top: 2px solid #3c3c3c;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p{
+    margin: 0;
+    font-size: 14px;
+    color: #bbbbbb;
+}
+
+/* Responsive design */
+
+@media (min-width: 400px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .main-section {
+        padding: 20px 10px;
+    }
+
+    .buttons{
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    button {
+        padding: 7px 10px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Animation for page load */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2d2d2d;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffd700;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ffed4e;
+}
