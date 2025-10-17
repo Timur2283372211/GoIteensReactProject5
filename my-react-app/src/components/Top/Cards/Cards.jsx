@@ -1,7 +1,7 @@
 import '../Cards/Cards.css'
 
 export default function Cards({ cards }) {
-
+  
   if (!cards) {
     return (
       <div className="cards-container">
