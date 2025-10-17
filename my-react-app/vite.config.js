@@ -10,5 +10,5 @@ export default defineConfig({
       },
     }),
   ],
-  base: "/GoIteensReactProject5",
+  base: "/GoIteensReactProject5/",
 })
